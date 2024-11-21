@@ -34,3 +34,15 @@ squareRedButton.addEventListener("click", function() {
 const squareBlueShowImg = document.querySelector("#squareBlueShowImg");
 const squareBlueButton = document.querySelector("#squareBlueButton");
 
+const squareBlueImg = document.createElement("img");
+squareBlueImg.src = "hamburger.png";
+squareBlueImg.alt = "Hamburger Bildet som ska vær her";
+squareBlueImg.classList.add("hamburger");
+squareBlueShowImg.appendChild(squareBlueImg);
+
+squareBlueButton.addEventListener("click", function() { 
+    console.log(squareBlueShowImg);
+    console.log("Knapp trykket på");
+    squareBlueShowImg.classList.toggle("hidden");
+});
+
