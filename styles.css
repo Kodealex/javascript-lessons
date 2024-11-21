@@ -75,6 +75,20 @@ section {
   display: none;
 }
 
+.hamburgerIcon {
+  height: 26px;
+  width: 26px;
+}
+.hamburgerIcon:hover {
+  cursor:pointer;
+}
+.hamburgerbutton
+{
+  border:none;
+  padding:0px;
+  margin: 0px;
+}
+
 /* FOOTER */
 footer {
   display: flex;

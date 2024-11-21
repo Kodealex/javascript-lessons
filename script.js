@@ -43,6 +43,37 @@ squareBlueShowImg.appendChild(squareBlueImg);
 squareBlueButton.addEventListener("click", function() { 
     console.log(squareBlueShowImg);
     console.log("Knapp trykket på");
-    squareBlueShowImg.classList.toggle("hidden");
+    squareBlueImg.classList.toggle("hidden");
 });
 
+// Hamburger meny til oppgaven
+// velger nav menyen og lager bildet som skal tilsvare hamburger bildet
+// Lager button/knapp elementet som skal være hamburger bildet
+const nav = document.querySelector("#navmenu");
+const navHamburger = document.createElement("img");
+const navHamburgerIcon = document.createElement("button");
+
+navHamburger.src = "hamburger.png";
+navHamburger.alt = "Hamburger bildet skal vær her";
+navHamburger.classList.add("hamburger");
+navHamburgerIcon.classList.add("hamburgerbutton");
+console.log(navHamburger);
+
+// Legg til hamburgerIcon class til button elementet
+// lag til hamburgerIcon som child til nav og bildet navhamburger som child
+// til Knappen hamburgerIcon
+navHamburgerIcon.classList.add("hamburgerIcon")
+nav.appendChild(navHamburgerIcon);
+navHamburgerIcon.appendChild(navHamburger);
+
+// henter IDen til UL elementet for å vise og gjemme UL elementet
+// Legger ul menyen til som child til navmenyen og hamburger knappen
+const ulShowmenu = document.querySelector("#Showmenu");
+navHamburger.appendChild(ulShowmenu);
+
+// legger til en addeventlistener til hamburgerIcon knappen
+navHamburgerIcon.addEventListener("click", function() {
+
+    console.log("Hamburger knapp trykket på!");
+    ulShowmenu.classList.toggle("hidden");
+});
