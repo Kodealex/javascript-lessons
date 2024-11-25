@@ -89,6 +89,14 @@ section {
   margin: 0px;
 }
 
+.navmenu
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
 /* FOOTER */
 footer {
   display: flex;
