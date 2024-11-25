@@ -67,10 +67,8 @@ nav.appendChild(navHamburgerIcon);
 navHamburgerIcon.appendChild(navHamburger);
 
 // henter IDen til UL elementet for å vise og gjemme UL elementet
-// Legger ul menyen til som child til navmenyen og hamburger knappen
 const ulShowmenu = document.querySelector("#Showmenu");
-//navHamburger.appendChild(ulShowmenu);
-//nav.appendChild(ulShowmenu;
+
 
 // legger til en addeventlistener til hamburgerIcon knappen
 navHamburgerIcon.addEventListener("click", function() {
