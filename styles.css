@@ -82,6 +82,10 @@ section {
 .hamburgerIcon:hover {
   cursor:pointer;
 }
+
+.hamburgerIcon:active {
+  rotate: 30deg;
+}
 .hamburgerbutton
 {
   border:none;
@@ -95,8 +99,13 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 8px 0;
+  
 }
 
+.Showmenu
+{
+  margin: 4px;
+}
 /* FOOTER */
 footer {
   display: flex;
